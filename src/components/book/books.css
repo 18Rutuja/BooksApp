@@ -1,0 +1,90 @@
+/* Main container with flex layout */
+.books-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between main section and sidebar */
+  padding: 20px; /* Padding around the container */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Left section for the list of books */
+.books-list {
+  flex: 3; /* 3/4 of the space */
+  padding: 10px; /* Padding for inner content */
+  background-color: #fff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  /* Deeper shadow */
+}
+li{
+  margin: 0;
+}
+/* List styling */
+.books-list ul {
+  list-style-type: none; /* No bullet points */
+  padding: 0; /* Remove padding to avoid gaps */
+  margin: 0; /* Remove margin to avoid gaps */
+}
+
+/* List item styling */
+.books-list li {
+  padding: 15px 10px; /* Consistent padding for each item */
+  border-bottom: 1px solid #ddd; /* Border to separate items */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Adjusted hover effect for list items */
+.books-list li:hover {
+  background-color: #F1F2F3; /* Light gray background on hover */
+}
+
+/* Link styling */
+.books-list a {
+  text-decoration: none; /* No underline */
+  color: #3498db; /* Blue color for links */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.books-list a:hover {
+  color: #226ea1; /* Darker blue on hover */
+}
+
+/* Sidebar section */
+.books-sidebar {
+  flex: 1; /* 1/4 of the space */
+  padding: 10px; /* Padding for inner content */
+  background-color: #fff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-left: 10px; /* Space between sections */
+}
+
+/* Sidebar input for search bar */
+.books-sidebar input {
+  width: 100%; /* Ensure the input box doesn't overflow */
+  padding: 10px; /* Padding for input */
+  border: 1px solid #ccc; 
+  border-radius: 5px; /* Rounded corners */
+  outline: none;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+.books-sidebar input:focus {
+  outline: none; /* Removes the default blue border on focus */
+  border-color: #aaa; /* Optional: Change border color on focus */
+}
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .books-container {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .books-sidebar {
+    margin-left: 0; /* No left margin in vertical layout */
+    order: 1; /* Sidebar comes first on smaller screens */
+  }
+
+  .books-list {
+    order: 2; /* Books list comes after the sidebar */
+    padding: 10px; /* Consistent padding */
+  }
+}

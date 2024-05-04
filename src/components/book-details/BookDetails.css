@@ -36,7 +36,7 @@
   border: 1px solid #ddd; /* Light border */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-  flex: 0.1; /* Expand to fill remaining space */
+  flex: 0.4; /* Expand to fill remaining space */
 }
 
 /* Header styling */
@@ -56,10 +56,14 @@
 /* Footer styling */
 
 .footer {
+<<<<<<< HEAD
   font-family: Arial, sans-serif;
   color: #555;
   border-radius: 5px;
   margin-top: 10px;
+=======
+  margin-top:0px;
+>>>>>>> b9f6ff35428534a4a66468219faa0bafd4b7c320
   text-align: center; /* Center-aligned text */
   background-color: #f0f0f0; /* Light gray background */
   padding: 20px; /* Padding for footer content */

@@ -3,7 +3,7 @@
   display: flex; /* Flexbox for layout */
   justify-content: space-between; /* Space between main section and sidebar */
   padding: 20px; /* Padding around the container */
-  background-color: #f5f5f5; /* Light gray background */
+  background-color: #e0f7fa; /* Light gray background */
 }
 
 /* Left section for the list of books */
@@ -33,7 +33,7 @@ li{
 
 /* Adjusted hover effect for list items */
 .books-list li:hover {
-  background-color: #F1F2F3; /* Light gray background on hover */
+  background-color: rgb(236, 253, 255); /* Light gray background on hover */
 }
 
 /* Link styling */

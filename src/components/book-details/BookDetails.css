@@ -36,7 +36,7 @@
   border: 1px solid #ddd; /* Light border */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-  flex: 0.4; /* Expand to fill remaining space */
+  flex: 0.2; /* Expand to fill remaining space */
 }
 
 /* Header styling */

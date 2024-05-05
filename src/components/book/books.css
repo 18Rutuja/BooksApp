@@ -21,7 +21,7 @@ li{
 .books-list ul {
   list-style-type: none; /* No bullet points */
   padding: 0; /* Remove padding to avoid gaps */
-  margin: 0; /* Remove margin to avoid gaps */
+  margin:0; /* Remove margin to avoid gaps */
 }
 
 /* List item styling */
